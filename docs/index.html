@@ -1,0 +1,30 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Google VR View Sample - Video</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  </style>
+</head>
+
+<body style="text-align: center;">
+  <div id="vrview"></div>
+
+  <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+  <script>
+  window.addEventListener('load', onVrViewLoad)
+  function onVrViewLoad() {
+    var vrView = new VRView.Player('#vrview', {
+      video: 'https://maechabin.github.io/vrview-demo/vr-video.mp4',
+      width: '100%',
+      height: '400'
+    });
+  }
+  </script>
+</body>
+
+</html>
